@@ -1,0 +1,15 @@
+#f5 to run and type number of tosses
+
+
+
+from random import randint
+num = input('Number of times to flip coin: ')
+flips = [randint(0,1) for r in range(num)]
+results = []
+for object in flips:
+        if object == 0:
+            results.append('Mirror of Kalandra')
+        elif object == 1:
+            results.append('Scroll of Wisdom')
+print ('Coin has flipped and fallen to:')
+print results
